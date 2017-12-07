@@ -1,0 +1,5 @@
+E:\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.dll.config
+E:\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.dll
+E:\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.pdb
+E:\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.dll
+E:\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.pdb
