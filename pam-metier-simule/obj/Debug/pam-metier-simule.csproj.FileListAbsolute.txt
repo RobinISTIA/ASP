@@ -5,9 +5,9 @@ E:\pam-td\pam-metier-simule\bin\Debug\pam-metier-simule.pdb
 E:\pam-td\pam-metier-simule\obj\Debug\pam-metier-simule.csprojResolveAssemblyReference.cache
 E:\pam-td\pam-metier-simule\obj\Debug\pam-metier-simule.exe
 E:\pam-td\pam-metier-simule\obj\Debug\pam-metier-simule.pdb
-H:\ASP.NET\pam-metier-simule\bin\Debug\pam-metier-simule.dll.config
-H:\ASP.NET\pam-metier-simule\bin\Debug\pam-metier-simule.dll
-H:\ASP.NET\pam-metier-simule\bin\Debug\pam-metier-simule.pdb
-H:\ASP.NET\pam-metier-simule\obj\Debug\pam-metier-simule.csprojResolveAssemblyReference.cache
-H:\ASP.NET\pam-metier-simule\obj\Debug\pam-metier-simule.dll
-H:\ASP.NET\pam-metier-simule\obj\Debug\pam-metier-simule.pdb
+C:\Users\Robin\Documents\ASP.NET\pam-td\pam-metier-simule\bin\Debug\pam-metier-simule.dll.config
+C:\Users\Robin\Documents\ASP.NET\pam-td\pam-metier-simule\bin\Debug\pam-metier-simule.dll
+C:\Users\Robin\Documents\ASP.NET\pam-td\pam-metier-simule\bin\Debug\pam-metier-simule.pdb
+C:\Users\Robin\Documents\ASP.NET\pam-td\pam-metier-simule\obj\Debug\pam-metier-simule.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Documents\ASP.NET\pam-td\pam-metier-simule\obj\Debug\pam-metier-simule.dll
+C:\Users\Robin\Documents\ASP.NET\pam-td\pam-metier-simule\obj\Debug\pam-metier-simule.pdb
