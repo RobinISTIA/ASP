@@ -7,7 +7,7 @@ using pam_metier_simule.Metier.entites;
 
 namespace pam_metier_simule.Metier.services
 {
-  interface IPamMetier
+  public interface IPamMetier
   {
     // liste de toutes les identités des employés
     Employe[] GetAllIdentitesEmployes();

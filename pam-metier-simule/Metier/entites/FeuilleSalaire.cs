@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pam_metier_simule.Metier.entites
 {
-  class FeuilleSalaire
+  public class FeuilleSalaire
   {
     // propriétés automatiques
     public Employe Employe { get; set; }

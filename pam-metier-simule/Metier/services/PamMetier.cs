@@ -8,7 +8,7 @@ using pam_metier_simule.Metier.entites;
 
 namespace pam_metier_simule.Metier.services
 {
-  class PamMetier : IPamMetier
+  public class PamMetier : IPamMetier
   {
     // liste des employés en cache
     public Employe[] Employes { get; set; }

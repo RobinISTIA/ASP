@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pam_metier_simule.Metier.entites
 {
-  class Indemnites
+  public class Indemnites
   {
     public int Indice { get; set; }
     public double BaseHeure { get; set; }

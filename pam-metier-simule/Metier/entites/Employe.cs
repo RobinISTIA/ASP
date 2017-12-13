@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pam_metier_simule.Metier.entites
 {
-  class Employe
+  public class Employe
   {
     
       public string SS { get; set; }

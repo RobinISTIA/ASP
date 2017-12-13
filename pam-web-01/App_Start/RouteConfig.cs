@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
-
 namespace pam_web_01
 {
   public class RouteConfig

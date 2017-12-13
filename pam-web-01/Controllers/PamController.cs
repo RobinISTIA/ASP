@@ -1,16 +1,17 @@
 ﻿using System.Web.Mvc;
+using pam_web_01.Models;
 
 namespace Pam.Web.Controllers
 {
   public class PamController : Controller
   {
     [HttpGet]
-    public ViewResult Index()
+    public ViewResult Index(ApplicationModel application)
     {
-      return View();
+      return View(new IndexModel() { Application = application });
     }
     [HttpPost]
-    public PartialViewResult FaireSimulation()
+    public PartialViewResult Simulation()
     {
         return PartialView("Simulation");
     }
@@ -20,7 +21,7 @@ namespace Pam.Web.Controllers
         return PartialView("Simulations");
     }
     [HttpPost]
-    public PartialViewResult VoirSimulation()
+    public PartialViewResult VoirSimulations()
     {
         return PartialView("Simulations");
     }
@@ -34,5 +35,6 @@ namespace Pam.Web.Controllers
     {
         return PartialView("Formulaire");
     }
+        
   }
 }
