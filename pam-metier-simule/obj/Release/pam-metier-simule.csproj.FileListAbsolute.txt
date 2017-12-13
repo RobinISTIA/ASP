@@ -3,3 +3,10 @@ E:\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.dll
 E:\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.pdb
 E:\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.dll
 E:\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.pdb
+E:\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.csprojResolveAssemblyReference.cache
+C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.dll.config
+C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.dll
+C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\bin\Release\pam-metier-simule.pdb
+C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.csprojResolveAssemblyReference.cache
+C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.dll
+C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.pdb

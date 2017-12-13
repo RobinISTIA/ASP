@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace pam_metier_simule.Metier.entites
 {
   //classe d'exception
-  class PamException : Exception
+  public class PamException : Exception
   {
       // le code de l'erreur
       public int Code { get; set; }

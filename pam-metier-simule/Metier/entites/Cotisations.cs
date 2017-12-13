@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pam_metier_simule.Metier.entites
 {
-  class Cotisations
+  public class Cotisations
   {
     public double CsgRds { get; set; }
     public double Csgd { get; set; }

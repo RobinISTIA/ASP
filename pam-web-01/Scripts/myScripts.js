@@ -1,4 +1,4 @@
-﻿//variables globales
+﻿// variables globales
 var loading;
 var content;
 var lnkFaireSimulation;
@@ -10,13 +10,13 @@ var lnkRetourFormulaire;
 var options;
 
 function faireSimulation() {
-    setMenu([lnkFaireSimulation, lnkVoirSimulations, lnkTerminerSession, lnkEffacerSimulation]);
-    var simulation = $('#simulation');
-    var formulaire = null;
+    // on fait un appel Ajax à la main
+    var simulation = $("#simulation");
+    setMenu([lnkFaireSimulation, lnkEffacerSimulation, lnkVoirSimulations, lnkTerminerSession]);
     $.ajax({
-        url: '/Pam/FaireSimulation',
+        url: '/Pam/Simulation',
         type: 'POST',
-        //data: formulaire.serialize(),
+        data: simulation.serialize(),
         dataType: 'html',
         beforeSend: function () {
             loading.show();
@@ -31,19 +31,23 @@ function faireSimulation() {
             // affichage réponse serveur
             content.html(jqXHR.responseText);
         }
-    }) 
+    })
 }
 
 function effacerSimulation() {
-    $('#simulation').hide();
+    // on efface les saisies du formulaire
+    var simulation = $("#simulation");
+    simulation.hide();
 }
 
 function enregistrerSimulation() {
+    // on fait un appel Ajax à la main
+    var simulation = $("#simulation");
     setMenu([lnkRetourFormulaire, lnkTerminerSession]);
     $.ajax({
         url: '/Pam/EnregistrerSimulation',
         type: 'POST',
-        //data: formulaire.serialize(),
+        data: simulation.serialize(),
         dataType: 'html',
         beforeSend: function () {
             loading.show();
@@ -62,11 +66,13 @@ function enregistrerSimulation() {
 }
 
 function voirSimulations() {
+    // on fait un appel Ajax à la main
+    var simulation = $("#simulation");
     setMenu([lnkRetourFormulaire, lnkTerminerSession]);
     $.ajax({
-        url: '/Pam/VoirSimulation',
+        url: '/Pam/VoirSimulations',
         type: 'POST',
-        //data: formulaire.serialize(),
+        data: simulation.serialize(),
         dataType: 'html',
         beforeSend: function () {
             loading.show();
@@ -85,11 +91,13 @@ function voirSimulations() {
 }
 
 function retourFormulaire() {
+    // on fait un appel Ajax à la main
+    var simulation = $("#simulation");
     setMenu([lnkFaireSimulation, lnkVoirSimulations, lnkTerminerSession]);
     $.ajax({
         url: '/Pam/Formulaire',
         type: 'POST',
-        //data: formulaire.serialize(),
+        data: simulation.serialize(),
         dataType: 'html',
         beforeSend: function () {
             loading.show();
@@ -108,11 +116,12 @@ function retourFormulaire() {
 }
 
 function terminerSession() {
+    var simulation = $("#simulation");
     setMenu([lnkFaireSimulation, lnkVoirSimulations, lnkTerminerSession]);
     $.ajax({
         url: '/Pam/TerminerSession',
         type: 'POST',
-        //data: formulaire.serialize(),
+        data: simulation.serialize(),
         dataType: 'html',
         beforeSend: function () {
             loading.show();
@@ -130,7 +139,9 @@ function terminerSession() {
     })
 }
 
+// au chargement du document
 $(document).ready(function () {
+    // on récupère les références des différents composants de la page
     loading = $("#loading");
     content = $("#content");
     // les liens du menu
@@ -142,17 +153,18 @@ $(document).ready(function () {
     lnkRetourFormulaire = $("#lnkRetourFormulaire");
     // on les met dans un tableau
     options = [lnkFaireSimulation, lnkEffacerSimulation, lnkEnregistrerSimulation, lnkVoirSimulations, lnkTerminerSession, lnkRetourFormulaire];
+    // on cache certains éléments de la page
+    loading.hide();
     // on fixe le menu
     setMenu([lnkFaireSimulation, lnkVoirSimulations, lnkTerminerSession]);
-    //on cache certains éléments de la page
-    loading.hide();
-})
+});
 
 function setMenu(show) {
-    $(options).each(function (i) {
+    // on affiche les liens du tableau [show]
+    $.each(options, function (i) {
         options[i].hide();
     });
-    $(show).each(function (i) {
+    $.each(show, function (i) {
         show[i].show();
     });
 }
