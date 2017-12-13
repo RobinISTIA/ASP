@@ -10,3 +10,10 @@ C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\bin\Release\pam-metier-simule
 C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.csprojResolveAssemblyReference.cache
 C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.dll
 C:\Users\usrlocal\Desktop\pam-td\pam-metier-simule\obj\Release\pam-metier-simule.pdb
+C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\bin\Release\pam-metier-simule.dll.config
+C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\bin\Release\pam-metier-simule.dll
+C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\bin\Release\pam-metier-simule.pdb
+C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-simule.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-simule.csproj.CoreCompileInputs.cache
+C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-simule.dll
+C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-simule.pdb

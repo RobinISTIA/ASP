@@ -2,7 +2,7 @@
 var loading;
 var content;
 var lnkFaireSimulation;
-var lnkEffacerSimulation
+var lnkEffacerSimulation;
 var lnkEnregistrerSimulation;
 var lnkTerminerSession;
 var lnkVoirSimulations;
@@ -12,6 +12,10 @@ var options;
 function faireSimulation() {
     // on fait un appel Ajax à la main
     var simulation = $("#simulation");
+    var formulaire = $("#formulaire");
+    if (!formulaire.validate().form()) {
+        return;
+    }
     setMenu([lnkFaireSimulation, lnkEffacerSimulation, lnkVoirSimulations, lnkTerminerSession]);
     $.ajax({
         url: '/Pam/Simulation',
@@ -139,6 +143,20 @@ function terminerSession() {
     })
 }
 
+$.validator.methods.number = function (value, element) {
+    return this.optional(element) || !isNaN(Globalize.parseFloat(value));
+}
+$.validator.methods.date = function (value, element) {
+    return this.optional(element) || !isNaN(Globalize.parseDate(value));
+}
+jQuery.extend(jQuery.validator.methods, {
+    range: function (value, element, param) {
+        //Use the Globalization plugin to parse the value
+        var val = Globalize.parseFloat(value);
+        return this.optional(element) || ( val >= param[0] && val <= param[1]);
+    }
+});
+
 // au chargement du document
 $(document).ready(function () {
     // on récupère les références des différents composants de la page
@@ -157,6 +175,9 @@ $(document).ready(function () {
     loading.hide();
     // on fixe le menu
     setMenu([lnkFaireSimulation, lnkVoirSimulations, lnkTerminerSession]);
+
+    var culture = 'fr-FR';
+    Globalize.culture(culture);
 });
 
 function setMenu(show) {
