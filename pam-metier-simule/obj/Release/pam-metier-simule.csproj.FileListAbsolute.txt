@@ -17,3 +17,9 @@ C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-s
 C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-simule.csproj.CoreCompileInputs.cache
 C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-simule.dll
 C:\Users\Robin\Documents\Repo git\ASP\pam-metier-simule\obj\Release\pam-metier-simule.pdb
+E:\repo\ASP\pam-metier-simule\bin\Release\pam-metier-simule.dll.config
+E:\repo\ASP\pam-metier-simule\bin\Release\pam-metier-simule.dll
+E:\repo\ASP\pam-metier-simule\bin\Release\pam-metier-simule.pdb
+E:\repo\ASP\pam-metier-simule\obj\Release\pam-metier-simule.csprojResolveAssemblyReference.cache
+E:\repo\ASP\pam-metier-simule\obj\Release\pam-metier-simule.dll
+E:\repo\ASP\pam-metier-simule\obj\Release\pam-metier-simule.pdb

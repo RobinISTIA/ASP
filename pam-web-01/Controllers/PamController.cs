@@ -30,11 +30,10 @@ namespace Pam.Web.Controllers
     {
         return PartialView("Formulaire");
     }
-    [HttpPost]
-    public PartialViewResult TerminerSession()
+    [HttpPost] 
+    public PartialViewResult TerminerSession(ApplicationModel application)
     {
-        return PartialView("Formulaire");
-    }
-        
+        return PartialView("Formulaire", new IndexModel { Application = application });
+    }        
   }
 }
